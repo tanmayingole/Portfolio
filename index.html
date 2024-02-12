@@ -10,28 +10,41 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">     
     </head>
   <body>
-     <header>
-      <div class="nav-bar" >
-        <div class="logo">Portfolio</div>
 
-         <div class="nav1">
-          <ul class="order">
-          <a href="#home">Home</a>
-          <a href="#About">About me</a>
-          <a href="#tech">Skills</a>
-          <a href="#Project">Project</a>
-          <a href="#contact">Contact</a>
-          </ul>
-         </div>
-          
-         <div class="main-icon">
-          <a href="#"><i class="fa-brands fa-facebook "></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram "></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin "></i></a>
-          <a href="#"><i class="fa-brands fa-square-whatsapp "></i></a>
-        </div>
-      </div>
-    </header>
+    <nav class="nav-bar">
+       <ul class="sidebar">
+          <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#About">About us</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+       </ul>
+
+       <ul >
+        <li ><a href="#">Portfolio</a></li>
+        <li class="hideOnmobile"><a href="#home">Home</a></li>
+        <li class="hideOnmobile"><a href="#About">About us</a></li>
+        <li class="hideOnmobile"><a href="#skill">Skills</a></li>
+        <li class="hideOnmobile"><a href="#Project">Project</a></li>
+        <li class="hideOnmobile"><a href="#contact">Contact</a></li>
+        <li onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+     </ul>
+    </nav>
+
+    <script>
+      function showsidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+      }
+      
+      function hidesidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display='none'
+      }
+
+    </script>
+      
     
     <div class="main" id="home"  >
       <div class="main-section">
@@ -54,7 +67,7 @@
     <div class="detail" >
       <h2>About me</h2><br>
       <div class="avatar-1">
-        <img src="img/tt.jpg" class="avatar">
+        <img src="img/p.JPG" class="avatar">
       </div>
 
       <div class="content">
@@ -65,14 +78,14 @@
           Seeking an entry-level position to utilize my skills in web designing and Data analytics .I have done internships in Data analytics and Frontend development.<br>
          </p>
          <br>
-         <button><a class="btn" href="">Resume</a></button>
+         <button><a href="E:\resume.pdf" download class="btn">Resume</a></button>
        </div>
       </div>
     </div>
   </div>
 
 
-    <div class="skills" id="tech">
+    <div class="skills" id="skill">
       <div class="blank">
         -
        </div>
@@ -179,44 +192,13 @@
       -
      </div>
     <h2 class="tlt" >Contact</h2>
-    <div class="package">
-      <div class="container-fluid-sm">
-        <div class="form-group" >
-          <label class="tag">First name</label>
-          <input class="form-control" type="text" name="">
-        </div>
-        <div class="form-group">
-          <label class="tag">Email</label>
-          <input class="form-control" type="text" name="">
-        </div>
-        <div class="form-group">
-          <label class="tag">contact</label>
-          <input class="form-control" type="text" name="">
-        </div>
-        <div class="form-group">
-          <label class="tag">message</label>
-          <textarea class="form-control" rows="5" ></textarea>
-        </div>
-        <div class="form-group">
-                <button type="button" class="btn btn-primary ">Submit</button>
-        </div>
-      </div> 
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+      <input type="submit" id="submit" value="Submit">
+    </form>
 
-      <div class="container1">
-        <h2>Contact me</h2>
-        <div class="adjust">
-        <address>Sai Nagar<br>Zingabai Takli ,Nagpur-30.</address>
-        <p>7757960916</p><br>
-        <div class="main-icon">
-          <a href="#"><i class="fa-brands fa-facebook "></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram "></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin "></i></a>
-          <a href="#"><i class="fa-brands fa-square-whatsapp "></i></a>
-        </div>
-
-      </div>
-      </div> 
-    </div>
   </div>
    
 
