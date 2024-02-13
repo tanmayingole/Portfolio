@@ -106,6 +106,10 @@ p i{
 
 }
 
+.social{
+  width: 30px;
+  height: 30px;
+}
 
 
 button{
@@ -182,7 +186,7 @@ h2{
 }
 
 .tlt{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 .box1{
@@ -262,38 +266,35 @@ h4{
   background: linear-gradient(90deg, rgba(36,11,0,1) 48%, rgba(139,10,10,1) 100%, rgba(119,40,7,1) 100%);
   
 }
-
 .box3{
-  height: 300px;
-}
-
-.s-box1{
   width: 100%;
-  height: 200px;
- text-align: center;
- display: flex;
- justify-content: space-evenly;
- align-items: center;
- 
- 
-}
-
-.b1{
+  height: 330px;
   
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(236, 123, 16, 1), 0 6px 20px 0 rgba(240, 142, 89, 2.5);
-  background-color: whitesmoke;
 }
 
-.b1:hover{
-  box-shadow: 0 4px 8px 0 rgba(89, 255, 252,2), 0 6px 20px 0 rgba(240, 142, 89, 2.5);
+.gallery{
+  display: flex;
+  width: 100%;
+  height:300px ;
+  gap: 5px;
+  justify-content: space-evenly;
+ 
+}
+.gallery > img{
+ width: 20%;
+ height: 200px;
+ object-fit: contain;
+ border: 2px solid rgb(176, 9, 9);
+ border-radius: 5px;
+ transition: all ease 0.5s;
+ justify-content: center;
+ 
+
 }
 
-.s-icon{
-  margin-bottom: 10px;
-  animation: effect 0.5s ease-in-out 0s infinite normal;
+.gallery > img:hover{
+  width: 80%;
+  height: 300px;
 }
 
 .connect{
@@ -317,6 +318,10 @@ h4{
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+.social-logo{
+  text-align: center;
 }
 #contactForm input[type="submit"] {
   background: #3092f0;
@@ -359,18 +364,22 @@ h4{
       padding: 10px;
   }
   .main{
-    display: block;
     height: 700px;
+    display: block;
     
   }
   .main-section{
-    padding-top: 40px;
+    height: 280px;
+    padding-top: 80px;
+    width: 100%;
   }
   .main-section h1{
-    font-weight: 100;
+    font-weight: 500;
+    font-size: medium;
   }
   .main-section p{
-    font-weight: normal;
+    font-weight: 200;
+    font-size: large;
   }
   .main-section p i{
     font-weight: normal;
@@ -378,9 +387,40 @@ h4{
 
   
   .main-section2{
-    display: none;
+    width: 100%;
   }
+  .main-image{
+    height: 360px;
+  }
+
+  .skills{
+    height: 800px;
+  }
+
+  .box1{
+    display:flex ;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 123px;
+    width: 70px;
+  }
+  .s-box{
+    width: 85px;
+    height:120px ;
+  }
+  .s-box h4{
+    width: 85px;
+    font-size: smaller;
+    text-align: center;
+    font-weight: normal;
+  }
+
+
 }
+
 
 
 
